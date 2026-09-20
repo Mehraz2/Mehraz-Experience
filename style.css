@@ -72,3 +72,29 @@ body {
 }
 
 
+
+/* Step 5: Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* ছবি গোল করার জন্য */
+    border: 3px solid #66fcf1; /* ছবির চারপাশে গ্লোয়িং বর্ডার */
+    object-fit: cover;
+}
+
+.hero-text .greeting {
+    color: #66fcf1;
+    font-size: 18px;
+}
+
+.hero-text .name {
+    font-size: 40px;
+    color: #fff;
+    margin: 10px 0;
+}

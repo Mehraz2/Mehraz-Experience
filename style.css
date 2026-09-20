@@ -1,9 +1,9 @@
 /* Step 1: Reset & Body Setup */
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 'poppins', sans-serif;
+    box-sizing: border-box; /* এটি ঠিক করা হলো */
+    font-family: 'Poppins', sans-serif; /* ফন্ট আলাদা লাইনে আনা হলো */
 }
 
 body {
@@ -11,7 +11,6 @@ body {
     color: #c5c6c7;
     display: flex;
 }
-
 
 /* Step 2: Sidebar Styling */
 .sidebar {
@@ -24,24 +23,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 40px 25px;
     border-right: 1px solid #333;
     z-index: 100;
 }
 
 /* Step 3: Main Content Area Setup */
-
 .main-content {
     margin-left: 250px;
     width: calc(100% - 250px);
     padding: 50px 80px;
 }
 
-
 /* Step 4: Nav Links & Social Icons */
-
 .logo a {
-   
     font-size: 22px;
     font-weight: 700;
     color: #66fcf1;
@@ -49,52 +44,44 @@ body {
 }
 
 .nav-links {
-    list-style: none;   
-}
-
-.nav-links li {
-    margin: 20px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .nav-links a {
     color: #c5c6c7;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
     transition: 0.3s;
+    display: block;
 }
-
-
-/* Hover Effect: মাউস নিলে রঙ বদলে যাবে এবং একটু ডানপাশে সরবে */
 
 .nav-links a:hover {
     color: #66fcf1;
-    padding-left: 8px;
+    transform: translateX(5px);
 }
 
-
-
-/* Step 5: Hero Section */
+/* Step 5: Hero Section Layout & Image */
 .hero-section {
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: center;
+    min-height: 80vh;
+    gap: 40px;
 }
 
 .hero-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; /* ছবি গোল করার জন্য */
-    border: 3px solid #66fcf1; /* ছবির চারপাশে গ্লোয়িং বর্ডার */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #66fcf1;
+    box-shadow: 0 0 25px rgba(102, 252, 241, 0.3);
 }
 
-.hero-text .greeting {
-    color: #66fcf1;
-    font-size: 18px;
-}
-
-.hero-text .name {
-    font-size: 40px;
-    color: #fff;
-    margin: 10px 0;
+.hero-text {
+    max-width: 550px;
 }

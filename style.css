@@ -28,3 +28,14 @@ body {
     border-right: 1px solid #333;
     z-index: 100;
 }
+
+/* Step 3: Main Content Area Setup */
+
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 50px 80px;
+}
+
+
+

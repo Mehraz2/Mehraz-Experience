@@ -38,4 +38,37 @@ body {
 }
 
 
+/* Step 4: Nav Links & Social Icons */
+
+.logo a {
+   
+    font-size: 22px;
+    font-weight: 700;
+    color: #66fcf1;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;   
+}
+
+.nav-links li {
+    margin: 20px 0;
+}
+
+.nav-links a {
+    color: #c5c6c7;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+/* Hover Effect: মাউস নিলে রঙ বদলে যাবে এবং একটু ডানপাশে সরবে */
+
+.nav-links a:hover {
+    color: #66fcf1;
+    padding-left: 8px;
+}
+
 

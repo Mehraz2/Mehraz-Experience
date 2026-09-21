@@ -3,363 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehraz Experience</title>
-    <!-- External CSS stylesheet link -->
+    <title>Mehraz Hossain - Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ========================================== -->
-    <!-- 1. SIDE NAVIGATION BAR SECTION             -->
-    <!-- ========================================== -->
-    <nav class="sidebar">
-
-        <!-- Logo / Brand Title -->
+    <!-- SIDEBAR NAVIGATION (Video Structural Layout) -->
+    <aside class="sidebar">
         <div class="logo">
             <a href="#home">Future Vision</a>
         </div>
 
-        <!-- Navigation Menu Links -->
-        <ul class="nav-links">
-            <li><a href="#about">About us</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#about" class="nav-link">About us</a></li>
+                <li><a href="#project" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
 
-        <!-- Social Media Icons (LinkedIn & GitHub) -->
-        <div class="social-links">
-            <!-- LinkedIn Profile Link -->
-            <a href="https://www.linkedin.com/in/mirajul-hossain-193b0b3b9/" target="_blank" title="LinkedIn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-                </svg>
-            </a>
-
-            <!-- GitHub Profile Link -->
-            <a href="https://github.com/Mehraz2" target="_blank" title="GitHub">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
-                </svg>
-            </a>
+        <div class="social-sidebar">
+            <a href="https://www.linkedin.com/in/mirajul-hossain-193b0b3b9/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Mehraz2" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/mehraz.x.rakib/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/mehraz.x.rakib/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
-    </nav>
+    </aside>
 
-    <!-- ========================================== -->
-    <!-- MAIN CONTENT CONTAINER                     -->
-    <!-- ========================================== -->
+    <!-- MAIN CONTENT CONTAINER -->
     <main class="main-content">
 
-        <!-- -------------------------------------- -->
-        <!-- 2. HERO / HOME SECTION                 -->
-        <!-- -------------------------------------- -->
-        <section id="home" class="hero-section">
-            <!-- Profile Image Box -->
-            <div class="hero-image">
-                <img src="Photo/black.png" alt="Mehraz Photo">
-            </div>
-
-            <!-- Intro Text Details -->
-            <div class="hero-text">
-                <p class="greeting">Hello, I'm</p>
-                <h1 class="name">Mehraz Hossain</h1>
-                <h2 class="title">Creative <span id="changing-text">Web Developer</span></h2>
-                <p class="bio"> 
-                    Shaping Ideas Into Interfaces — Building refined digital 
-                    experiences with modern design and thoughtful interactions.
-                </p>
-            </div>
-        </section>
-
-        <!-- -------------------------------------- -->
-        <!-- 3. ABOUT US SECTION                    -->
-        <!-- -------------------------------------- -->
-        <section id="about" class="about-section">
-            <!-- About Image Box -->
-            <div class="about-image">
-                <img src="Photo/white.png" alt="Mehraz About Photo">
-            </div>
-
-            <!-- About Content Box -->
-            <div class="about-content">
-                <h2 class="section-title">Creativity <br><span>Is My Passion</span></h2>
-                <p class="about-bio">
-                    I am a frontend developer passionate about creating responsive, high-performance web applications with modern aesthetics and smooth interactions.
-                </p>
-
-                <!-- Key Focus & Core Tech Highlights -->
-                <div class="experience-box">
-                    <div class="exp-item">
-                        <h3>Focus</h3>
-                        <p>Frontend Development & Modern UI Design</p>
-                    </div>
-                    <div class="exp-item">
-                        <h3>Core Tech</h3>
-                        <p>HTML5, CSS3, JavaScript (DOM)</p>
-                    </div>
+        <!-- HERO / HOME SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-wrapper">
+                <div class="hero-text-left">
+                    <span class="greeting">Hello, I'm</span>
+                    <h1 class="hero-name">Mehraz<br>Hossain</h1>
                 </div>
 
-                <!-- Resume Download / View Button -->
-                <a href="#" class="resume-btn">Resume ↗</a>
+                <div class="hero-image-container">
+                    <div class="glow-effect"></div>
+                    <img src="Photo/black.png" alt="Mehraz Hossain" class="hero-img">
+                </div>
+
+                <div class="hero-text-right">
+                    <span class="sub-title">Creative</span>
+                    <h2 class="hero-role">Web<br>Developer</h2>
+                </div>
             </div>
         </section>
 
-        <!-- -------------------------------------- -->
-        <!-- 4. PROJECTS SHOWCASE SECTION           -->
-        <!-- -------------------------------------- -->
-        <section id="project" class="projects-section">
-            <h2 class="section-title">I make incredible <span>Projects</span></h2>
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <div class="about-img-box">
+                    <img src="Photo/white.png" alt="Mehraz About Photo" class="about-img">
+                </div>
+                <div class="about-text-content">
+                    <h2 class="section-heading">Creativity<br>Is My Passion</h2>
+                    <p class="about-description">I am a frontend developer passionate about creating responsive, high-performance web applications with modern aesthetics and smooth interactions.</p>
+                    
+                    <a href="#" class="btn btn-resume">Resume <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
 
-            <!-- Projects Grid / Scrollable Container -->
+        <!-- PROJECTS SECTION -->
+        <section class="projects-section" id="project">
+            <h2 class="section-heading">I make incredible<br>Projects</h2>
+            
             <div class="projects-grid">
 
-                <!-- Project Item 01: E-Commerce Website -->
-                <a href="https://apnar-project-1-link.netlify.app" target="_blank" class="project-card">
-                    <span class="project-num">01</span>
-                    <span class="badge">Web</span>
-                    <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p class="tech">Technologies used: HTML5, CSS3 & JavaScript</p>
+                <!-- Project 01 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">01</span>
+                        <span class="project-badge">Web</span>
                     </div>
-                </a>
+                    <h3 class="project-title">E-Commerce Website</h3>
+                    <p class="project-tech">Technologies used<br>HTML5, CSS3 & JavaScript</p>
+                    <div class="project-preview p1">
+                        <a href="https://apnar-project-1-link.netlify.app" target="_blank" class="arrow-btn" aria-label="View Project"><i class="fas fa-arrow-up-right"></i></a>
+                    </div>
+                </article>
 
-                <!-- Project Item 02: Snake Game -->
-                <a href="https://snakegames02.netlify.app" target="_blank" class="project-card">
-                    <span class="project-num">02</span>
-                    <span class="badge">Web</span>
-                    <div class="project-info">
-                        <h3>Snake Game</h3>
-                        <p class="tech">Technologies used: HTML5, CSS3 & JavaScript</p>
+                <!-- Project 02 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">02</span>
+                        <span class="project-badge">Web</span>
                     </div>
-                </a>
+                    <h3 class="project-title">Snake Game</h3>
+                    <p class="project-tech">Technologies used<br>HTML5, CSS3 & JavaScript</p>
+                    <div class="project-preview p2">
+                        <a href="https://snakegames02.netlify.app" target="_blank" class="arrow-btn" aria-label="View Project"><i class="fas fa-arrow-up-right"></i></a>
+                    </div>
+                </article>
 
-                <!-- Project Item 03: Weather Web App -->
-                <a href="https://apnar-project-3-link.github.io" target="_blank" class="project-card">
-                    <span class="project-num">03</span>
-                    <span class="badge">Web</span>
-                    <div class="project-info">
-                        <h3>Weather Web App</h3>
-                        <p class="tech">Technologies used: HTML5, CSS3, JS & Weather API</p>
+                <!-- Project 03 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">03</span>
+                        <span class="project-badge">Web</span>
                     </div>
-                </a>
+                    <h3 class="project-title">Weather Web App</h3>
+                    <p class="project-tech">Technologies used<br>HTML5, CSS3, JS & Weather API</p>
+                    <div class="project-preview p3">
+                        <a href="https://apnar-project-3-link.github.io" target="_blank" class="arrow-btn" aria-label="View Project"><i class="fas fa-arrow-up-right"></i></a>
+                    </div>
+                </article>
 
-                <!-- Project Item 04: To-Do List App -->
-                <a href="https://to-do-app-03n.netlify.app" target="_blank" class="project-card">
-                    <span class="project-num">04</span>
-                    <span class="badge">Web</span>
-                    <div class="project-info">
-                        <h3>To-Do List App</h3>
-                        <p class="tech">Technologies used: HTML5, CSS3 & JavaScript</p>
+                <!-- Project 04 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">04</span>
+                        <span class="project-badge">Web</span>
                     </div>
-                </a>
+                    <h3 class="project-title">To-Do List App</h3>
+                    <p class="project-tech">Technologies used<br>HTML5, CSS3 & JavaScript</p>
+                    <div class="project-preview p4">
+                        <a href="https://to-do-app-03n.netlify.app" target="_blank" class="arrow-btn" aria-label="View Project"><i class="fas fa-arrow-up-right"></i></a>
+                    </div>
+                </article>
 
-                <!-- Project Item 05: Product Landing Page -->
-                <a href="https://apnar-project-2-link.vercel.app" target="_blank" class="project-card">
-                    <span class="project-num">05</span>
-                    <span class="badge">Web</span>
-                    <div class="project-info">
-                        <h3>Product Landing Page</h3>
-                        <p class="tech">Technologies used: HTML5, CSS3 & JavaScript</p>
+                <!-- Project 05 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">05</span>
+                        <span class="project-badge">Web</span>
                     </div>
-                </a>
+                    <h3 class="project-title">Product Landing Page</h3>
+                    <p class="project-tech">Technologies used<br>HTML5, CSS3 & JavaScript</p>
+                    <div class="project-preview p5">
+                        <a href="https://apnar-project-2-link.vercel.app" target="_blank" class="arrow-btn" aria-label="View Project"><i class="fas fa-arrow-up-right"></i></a>
+                    </div>
+                </article>
 
             </div>
         </section>
 
-        <!-- -------------------------------------- -->
-        <!-- 5. WORK EXPERIENCE & EDUCATION SECTION -->
-        <!-- -------------------------------------- -->
+        <!-- EXPERIENCE SECTION -->
         <section class="experience-section">
-            <h2 class="section-title">My Work <span>Experience</span></h2>
+            <h2 class="section-heading">My Work<br>Experience</h2>
             
-            <!-- Category Switch Buttons -->
-            <div class="tab-buttons">
-                <button class="tab-btn active">Experience</button>
-                <button class="tab-btn">Education</button>
-            </div>
-
-            <!-- Timeline Experience Items -->
-            <div class="timeline">
-                <!-- Timeline Item 01 -->
+            <div class="timeline-container">
+                <!-- Timeline 01 -->
                 <div class="timeline-item">
-                    <div class="role-title">Frontend Web Developer</div>
-                    <div class="company">Phaton</div>
-                    <div class="date">Oct-25 - Present</div>
-                    <p class="desc">Currently working as a Frontend Web Developer creating dynamic web applications using React JS & Tailwind CSS.</p>
+                    <div class="timeline-left">
+                        <h3 class="timeline-title">Frontend Web Developer</h3>
+                        <span class="timeline-company">Phaton</span>
+                    </div>
+                    <div class="timeline-divider">
+                        <span class="timeline-dot"></span>
+                    </div>
+                    <div class="timeline-right">
+                        <span class="timeline-date">Oct-25 - Present</span>
+                        <p class="timeline-desc">Currently working as a Frontend Web Developer creating dynamic web applications using React JS & Tailwind CSS.</p>
+                    </div>
                 </div>
 
-                <!-- Timeline Item 02 -->
+                <!-- Timeline 02 -->
                 <div class="timeline-item">
-                    <div class="role-title">Frontend Web Developer</div>
-                    <div class="company">Skillify Zone</div>
-                    <div class="date">Aug - July 2025</div>
-                    <p class="desc">Completed projects including personal portfolio, landing pages, weather app using HTML, CSS, JS.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- -------------------------------------- -->
-        <!-- 6. WHAT I OFFER / SKILLS SECTION       -->
-        <!-- -------------------------------------- -->
-        <section class="offer-section">
-            <h2 class="section-title">What <span>I Offer</span></h2>
-
-            <div class="offer-grid">
-                <div class="offer-card">
-                    <h3>Development Skills</h3>
-                    <p>Transforming concepts into interactive web experiences through creative thinking and practical development.</p>
-                    
-                    <!-- Skill Badges/Tags -->
-                    <div class="skills-tags">
-                        <span>HTML</span> 
-                        <span>CSS</span> 
-                        <span>JavaScript</span> 
-                        <span>Tailwind CSS</span> 
-                        <span>React JS</span> 
-                        <span>MySQL</span> 
-                        <span>Git & GitHub</span>
+                    <div class="timeline-left">
+                        <h3 class="timeline-title">Frontend Web Developer</h3>
+                        <span class="timeline-company">Skillify Zone</span>
+                    </div>
+                    <div class="timeline-divider">
+                        <span class="timeline-dot"></span>
+                    </div>
+                    <div class="timeline-right">
+                        <span class="timeline-date">Aug - July 2025</span>
+                        <p class="timeline-desc">Completed projects including personal portfolio, landing pages, weather app using HTML, CSS, JS.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- -------------------------------------- -->
-        <!-- 7. TESTIMONIALS / REVIEWS SECTION     -->
-        <!-- -------------------------------------- -->
+        <!-- SKILLS & TOOLS SECTION -->
+        <section class="skills-section">
+            <h2 class="section-heading">What I Offer</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3 class="skill-box-title">Development Skills</h3>
+                    <p class="skill-box-desc">Transforming concepts into interactive web experiences through creative thinking and practical development.</p>
+                    <div class="tags-wrapper">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Tailwind CSS</span>
+                        <span class="tag">React JS</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Git & GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3 class="skill-box-title">Development Tools</h3>
+                    <p class="skill-box-desc">Leveraging modern tools to streamline workflow, improve productivity, and deliver high-quality web products.</p>
+                    <div class="tags-wrapper">
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">ChatGPT</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
         <section class="testimonials-section">
-            <h2 class="section-title">What They Say <span>About Me</span></h2>
+            <h2 class="section-heading">What They Say<br>About Me</h2>
+            
+            <div class="testimonials-grid">
 
-            <!-- Testimonial Card 01 -->
-            <div class="testi-card">
-                <div class="client-profile">
-                    <img src="clint/customer 1 .jpg" alt="Client Photo" class="client-avatar">
-                    <div class="client-details">
-                        <h4 class="client-name">Sarah Jenkins</h4>
-                        <span class="user-role">Product Manager</span>
+                <div class="testimonial-card">
+                    <div class="avatar-box">
+                        <img src="clint/customer 1 .jpg" alt="Sarah Jenkins" class="avatar-img">
                     </div>
+                    <h4 class="client-name">Sarah Jenkins</h4>
+                    <span class="client-role">Product Manager</span>
+                    <div class="stars-rating">★★★★★ <span>5.0</span></div>
+                    <p class="review-text">Mehraz combines technical skills with creativity. His projects reflect great attention to detail, clean code, and user-friendly design.</p>
                 </div>
-                <div class="rating-box">
-                    <span class="stars">★★★★★</span>
-                    <span class="score">5.0</span>
-                </div>
-                <p>Mehraz combines technical skills with creativity. His projects reflect great attention to detail, clean code, and user-friendly design.</p>
-            </div>
 
-            <!-- Testimonial Card 02 -->
-            <div class="testi-card">
-                <div class="client-profile">
-                    <img src="clint/customer 2.jpg" alt="Client Photo" class="client-avatar">
-                    <div class="client-details">
-                        <h4 class="client-name">David Miller</h4>
-                        <span class="user-role">Tech Lead at Phaton</span>
+                <div class="testimonial-card">
+                    <div class="avatar-box">
+                        <img src="clint/customer 2.jpg" alt="David Miller" class="avatar-img">
                     </div>
+                    <h4 class="client-name">David Miller</h4>
+                    <span class="client-role">Tech Lead at Phaton</span>
+                    <div class="stars-rating">★★★★★ <span>5.0</span></div>
+                    <p class="review-text">Working with Mehraz was seamless. He adapts quickly, solves problems well, and delivers frontend solutions efficiently.</p>
                 </div>
-                <div class="rating-box">
-                    <span class="stars">★★★★★</span>
-                    <span class="score">5.0</span>
-                </div>
-                <p>Working with Mehraz was seamless. He adapts quickly, solves problems well, and delivers frontend solutions efficiently.</p>
-            </div>
 
-            <!-- Testimonial Card 03 -->
-            <div class="testi-card">
-                <div class="client-profile">
-                    <img src="clint/customer 3.jpg" alt="Client Photo" class="client-avatar">
-                    <div class="client-details">
-                        <h4 class="client-name">Alex Turner</h4>
-                        <span class="user-role">UI/UX Designer</span>
+                <div class="testimonial-card">
+                    <div class="avatar-box">
+                        <img src="clint/customer 3.jpg" alt="Alex Turner" class="avatar-img">
                     </div>
+                    <h4 class="client-name">Alex Turner</h4>
+                    <span class="client-role">UI/UX Designer</span>
+                    <div class="stars-rating">★★★★★ <span>5.0</span></div>
+                    <p class="review-text">He turned our complex Figma designs into pixel-perfect responsive web pages. Exceptional eye for aesthetics and micro-interactions.</p>
                 </div>
-                <div class="rating-box">
-                    <span class="stars">★★★★★</span>
-                    <span class="score">5.0</span>
-                </div>
-                <p>He turned our complex Figma designs into pixel-perfect responsive web pages. Exceptional eye for aesthetics and micro-interactions.</p>
-            </div>
 
-            <!-- Testimonial Card 04 -->
-            <div class="testi-card">
-                <div class="client-profile">
-                    <img src="clint/customer 4.jpg" alt="Client Photo" class="client-avatar">
-                    <div class="client-details">
-                        <h4 class="client-name">Emily Watson</h4>
-                        <span class="user-role">Startup Founder</span>
+                <div class="testimonial-card">
+                    <div class="avatar-box">
+                        <img src="clint/customer 4.jpg" alt="Emily Watson" class="avatar-img">
                     </div>
+                    <h4 class="client-name">Emily Watson</h4>
+                    <span class="client-role">Startup Founder</span>
+                    <div class="stars-rating">★★★★★ <span>5.0</span></div>
+                    <p class="review-text">Delivered our e-commerce web application ahead of deadline. Very responsive in communication and dedicated to quality work.</p>
                 </div>
-                <div class="rating-box">
-                    <span class="stars">★★★★★</span>
-                    <span class="score">5.0</span>
-                </div>
-                <p>Delivered our e-commerce web application ahead of deadline. Very responsive in communication and dedicated to quality work.</p>
-            </div>
 
-            <!-- Testimonial Card 05 -->
-            <div class="testi-card">
-                <div class="client-profile">
-                    <img src="clint/customer 5.jpg" alt="Client Photo" class="client-avatar">
-                    <div class="client-details">
-                        <h4 class="client-name">Robert Vance</h4>
-                        <span class="user-role">Senior Developer</span>
+                <div class="testimonial-card">
+                    <div class="avatar-box">
+                        <img src="clint/customer 5.jpg" alt="Robert Vance" class="avatar-img">
                     </div>
+                    <h4 class="client-name">Robert Vance</h4>
+                    <span class="client-role">Senior Developer</span>
+                    <div class="stars-rating">★★★★★ <span>5.0</span></div>
+                    <p class="review-text">Impressive knowledge of React JS and CSS layout systems. His code structure is clean, scalable, and easy to maintain.</p>
                 </div>
-                <div class="rating-box">
-                    <span class="stars">★★★★★</span>
-                    <span class="score">5.0</span>
-                </div>
-                <p>Impressive knowledge of React JS and CSS layout systems. His code structure is clean, scalable, and easy to maintain.</p>
+
             </div>
         </section>
 
-        <!-- -------------------------------------- -->
-        <!-- 8. CONTACT ME & FOOTER SECTION          -->
-        <!-- -------------------------------------- -->
-        <section id="contact" class="contact-section">
-            <h2 class="section-title">Contact <span>Me</span></h2>
-            <p>Let’s Make Your Vision Interactive.</p>
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <h2 class="section-heading">Contact Me</h2>
+                <p class="contact-subtext">Let’s Make Your Vision Interactive.</p>
+                
+                <button class="btn btn-copy"><i class="far fa-copy"></i> Copy Email</button>
 
-            <!-- Interactive Action Buttons -->
-            <div class="contact-actions">
-                <button class="copy-email-btn">Copy Email 📋</button>
-            </div>
+                <div class="contact-links-grid">
+                    <div class="contact-column">
+                        <h4>Email</h4>
+                        <p class="contact-info">mirajul.hossain002@gmail.com</p>
+                        <h4>Location</h4>
+                        <p class="contact-info">Noakhali, Bangladesh</p>
+                    </div>
 
-            <!-- Contact Information Grid -->
-            <div class="contact-grid">
-                <!-- Email & Location Info -->
-                <div class="contact-col">
-                    <h4>Email</h4>
-                    <p>mirajul.hossain002@gmail.com</p>
+                    <div class="contact-column">
+                        <h4>Social Media</h4>
+                        <ul class="contact-list">
+                            <li><a href="https://www.linkedin.com/in/mirajul-hossain-193b0b3b9/" target="_blank">LinkedIn <i class="fas fa-arrow-up-right"></i></a></li>
+                            <li><a href="https://github.com/Mehraz2" target="_blank">GitHub <i class="fas fa-arrow-up-right"></i></a></li>
+                            <li><a href="https://www.instagram.com/mehraz.x.rakib/" target="_blank">Instagram <i class="fas fa-arrow-up-right"></i></a></li>
+                            <li><a href="https://www.facebook.com/mehraz.x.rakib/" target="_blank">Facebook <i class="fas fa-arrow-up-right"></i></a></li>
+                        </ul>
+                    </div>
 
-                    <h4>Location</h4>
-                    <p>Noakhali, Bangladesh</p>
-                </div>
-
-                <!-- Social Media Platforms -->
-                <div class="contact-col">
-                    <h4>Social Media</h4>
-                    <ul class="contact-links">
-                        <li><a href="https://www.linkedin.com/in/mirajul-hossain-193b0b3b9/" target="_blank">LinkedIn ↗</a></li>
-                        <li><a href="https://github.com/Mehraz2" target="_blank">GitHub ↗</a></li>      
-                        <li><a href="https://www.instagram.com/mehraz.x.rakib/" target="_blank">Instagram ↗</a></li>
-                        <li><a href="https://www.facebook.com/mehraz.x.rakib/" target="_blank">Facebook ↗</a></li>
-                    </ul>
-                </div>
-
-                <!-- Direct Messaging Channels -->
-                <div class="contact-col">
-                    <h4>Write Me & We'll Talk</h4>
-                    <ul class="contact-links">
-                        <li><a href="https://wa.me/qr/3P6FID5LRVPYA1" target="_blank">WhatsApp ↗</a></li>
-                        <li><a href="https://m.me/mehraz.x.rakib" target="_blank">Messenger ↗</a></li>
-                        <li><a href="https://www.instagram.com/mehraz.x.rakib/" target="_blank">Instagram ↗</a></li>     
-                    </ul>
+                    <div class="contact-column">
+                        <h4>Write Me & We'll Talk</h4>
+                        <ul class="contact-list">
+                            <li><a href="https://wa.me/qr/3P6FID5LRVPYA1" target="_blank">WhatsApp <i class="fas fa-arrow-up-right"></i></a></li>
+                            <li><a href="https://m.me/mehraz.x.rakib" target="_blank">Messenger <i class="fas fa-arrow-up-right"></i></a></li>
+                            <li><a href="https://www.instagram.com/mehraz.x.rakib/" target="_blank">Instagram <i class="fas fa-arrow-up-right"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <!-- Website Footer -->
-            <footer class="footer">
-                <p>All Rights Reserved © 2026</p>
-            </footer>
         </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <p>All Rights Reserved © 2026</p>
+        </footer>
 
     </main>
+
 </body>
 </html>

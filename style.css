@@ -1,87 +1,39 @@
-/* Step 1: Reset & Body Setup */
+/* 1. GOOGLE FONTS & RESET */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* এটি ঠিক করা হলো */
-    font-family: 'Poppins', sans-serif; /* ফন্ট আলাদা লাইনে আনা হলো */
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
+
+/* 2. COLOR & THEME VARIABLES (Video Theme) */
+:root {
+    --bg-main: #0b0713;          /* Main Dark Background */
+    --bg-card: rgba(25f, 20, 45, 0.5); /* Glassmorphism Card Background */
+    --purple-primary: #8b5cf6;   /* Main Glowing Purple */
+    --purple-light: #a78bfa;     /* Light Purple for sub-headings */
+    --text-white: #ffffff;
+    --text-gray: #a1a1aa;
+    --border-color: rgba(139, 92, 246, 0.2);
+}
+
+
+/* 3. BODY & LAYOUT SETUP */
 
 body {
-    background-color: #0b0c10;
-    color: #c5c6c7;
+    background-color: var(--bg-main);
+    color: var(--text-white);
     display: flex;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
-/* Step 2: Sidebar Styling */
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #1f2833;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px 25px;
-    border-right: 1px solid #333;
-    z-index: 100;
-}
 
-/* Step 3: Main Content Area Setup */
+/* Main Content Area */
+
 .main-content {
-    margin-left: 250px;
-    width: calc(100% - 250px);
-    padding: 50px 80px;
-}
-
-/* Step 4: Nav Links & Social Icons */
-.logo a {
-    font-size: 22px;
-    font-weight: 700;
-    color: #66fcf1;
-    text-decoration: none;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.nav-links a {
-    color: #c5c6c7;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: 0.3s;
-    display: block;
-}
-
-.nav-links a:hover {
-    color: #66fcf1;
-    transform: translateX(5px);
-}
-
-/* Step 5: Hero Section Layout & Image */
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    gap: 40px;
-}
-
-.hero-image img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #66fcf1;
-    box-shadow: 0 0 25px rgba(102, 252, 241, 0.3);
-}
-
-.hero-text {
-    max-width: 550px;
+    margin-left: 260px;
+    padding: 40px 60px;
+    width: calc(100% - 260px);
 }

@@ -1,118 +1,50 @@
-/* 1. GOOGLE FONTS & RESET */
+   /* 1. RESET & THEME */
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
 }
 
-/* 2. COLOR & THEME VARIABLES (Video Theme) */
 :root {
-    --bg-main: #0b0713;          /* Main Dark Background */
-    --bg-card: rgba(25f, 20, 45, 0.5); /* Glassmorphism Card Background */
-    --purple-primary: #8b5cf6;   /* Main Glowing Purple */
-    --purple-light: #a78bfa;     /* Light Purple for sub-headings */
-    --text-white: #ffffff;
-    --text-gray: #a1a1aa;
-    --border-color: rgba(139, 92, 246, 0.2);
+    --bg-color: #05020d;
+    --text-color: #ffffff;
+    --purple: #8b5cf6;
 }
-
-
-/* 3. BODY & LAYOUT SETUP */
 
 body {
-    background-color: var(--bg-main);
-    color: var(--text-white);
-    display: flex;
-    min-height: 100vh;
-    overflow: hidden;
-}
-
-
-/* Main Content Area */
-
-.main-content {
-    margin-left: 260px;
-    padding: 40px 60px;
-    width: calc(100% - 260px);
-}
-
-
-/* STEP 2: SIDEBAR STYLING */
-
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100vh;
-    background-color: var(--bg-main);
-    border-right: 1px solid var(--border-color); 
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 100;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 
 
-/* Logo */
-
-.sidebar .logo a {
-    color: var(--text-white);
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
-    letter-spacing: 1px;
+:root {
+    --bg-color: #05020d;
+    --text-color: #ffffff;
+    --purple: #8b5cf6;
 }
 
-/* Nav Links */
-.nav-menu ul li {
-    margin-bottom: 25px;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
-.nav-link {
-    color: var(--text-gray);
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
 
-/* Nav Link Hover Effect */
-.nav-link:hover {
-    color: var(--purple-primary);
-    transform: translateX(5px); /* Ektu daane shurbe */
-}
 
-/* Social Icons Area */
-.social-sidebar {
-    display: flex;
-    gap: 15px;
-}
 
-.social-sidebar a {
-    color: var(--text-gray);
-    font-size: 1.1rem;
-    width: 38px;
-    height: 38px;
-    border: 1px solid var(--border-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
 
-/* Social Icon Hover Effect */
-.social-sidebar a:hover {
-    color: var(--text-white);
-    background-color: var(--purple-primary);
-    border-color: var(--purple-primary);
-    transform: translateY(-3px); /* Ektu opore uthbe */
-}
+
+
+
+
+
+
+
+
+
+

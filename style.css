@@ -49,6 +49,38 @@ body {
 
 
 
+/* Step 3: Main Content Area Setup */
+
+.main-content {
+    margin-left: 280px;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+
+/* Nav Links Position */
+
+.nav-links {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+
+
+.nav-links a {
+    width: 100%;
+    text-align: left;
+}
+
+
+
+
+
+
 
 
 

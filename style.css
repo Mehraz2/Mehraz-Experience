@@ -223,10 +223,10 @@ body::after {
 ========================================================= */
 
 .social-sidebar {
-    position: fixed;
+    position: absolute;
 
-    left: 4%;
-    bottom: 45px;
+    left: 117px;
+    bottom: -734px;
 
     display: flex;
     flex-direction: column;
@@ -1952,4 +1952,6 @@ section {
 
         transition-duration: 0.01ms !important;
     }
-}
+
+    
+    

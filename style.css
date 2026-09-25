@@ -1988,7 +1988,7 @@ section {
     bottom: 10%;
     left: 20%;
 }
-2️⃣ তারপর এই CSS বসাও
+
 /* Orbiting Objects */
 
 .hero-image-container {
@@ -2047,4 +2047,13 @@ section {
 
 .object-3 {
     animation-delay: -5.3s;
+}
+
+
+.orbit-object {
+    border: 2px solid #ffffff;
+    box-shadow:
+        0 0 10px #9b7cff,
+        0 0 25px #9b7cff,
+        0 0 45px #9b7cff;
 }

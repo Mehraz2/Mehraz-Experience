@@ -369,7 +369,7 @@ section {
 
 .hero-image-container {
     position: relative;
-
+    isolation: isolate;
     height: 780px;
 
     display: flex;
@@ -428,7 +428,7 @@ section {
 
 .hero-img {
     position: relative;
-
+     z-index: 5;
     width: 650px;
     max-width: 100%;
 
@@ -1713,10 +1713,12 @@ section {
     .sub-title {
         font-size: 20px;
     }
+.hero-img {
+    position: relative;
+    z-index: 5;
 
-    .hero-img {
-        width: 390px;
-    }
+    clip-path: ellipse(75% 70% at 50% 35%);
+}
 
     .hero-image-container::before {
         width: 300px;
@@ -1957,103 +1959,139 @@ section {
 }
 
 
-
-
-/* Orbiting Objects */
-
-.hero-image-container {
-    position: relative;
-}
-
-.orbit-object {
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background: #9b7cff;
-    box-shadow: 0 0 20px #9b7cff;
-}
-
-.object-1 {
-    top: 10%;
-    left: 50%;
-}
-
-.object-2 {
-    top: 50%;
-    right: 5%;
-}
-
-.object-3 {
-    bottom: 10%;
-    left: 20%;
-}
-
-/* Orbiting Objects */
+/* ============================= */
+/* PHOTO WAVE ORBIT              */
+/* ============================= */
 
 .hero-image-container {
     position: relative;
+    width: min(90vw, 480px);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    isolation: isolate;
 }
 
-/* Orbiting Circle */
 
-.orbit-object {
-    position: absolute;
-    top: 60%;
-    left: 50%;
+/* ============================= */
+/* PHOTO                         */
+/* ============================= */
 
-    width: 28px;
-    height: 28px;
-
+.hero-image {
+    position: relative;
+    width: 78%;
+    height: 78%;
+    object-fit: cover;
     border-radius: 50%;
-
-    background: #9b7cff;
-    box-shadow: 0 0 25px #9b7cff;
-
-    transform: translate(-50%, -50%);
-
-    animation: orbit 8s linear infinite;
+    z-index: 3;
 }
 
 
-/* Orbit Animation */
+/* ============================= */
+/* WAVE ORBIT                    */
+/* ============================= */
 
-@keyframes orbit {
+.hero-image-container::before,
+.hero-image-container::after {
+    content: "";
+    position: absolute;
+    top: 52%;
+    left: 55%;
+    width: 107%;
+    height: 105%;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+
+/* Purple Wave */
+
+.hero-image-container::before {
+    border: 3px solid #9b7cff;
+
+    box-shadow:
+        0 0 12px #9b7cff,
+        0 0 30px rgba(155, 124, 255, 0.6);
+
+    transform: translate(-50%, -50%) scaleY(0.72);
+
+    animation: waveOrbit 7s linear infinite;
+
+    z-index: 4;
+}
+
+
+/* Blue + Pink Wave */
+
+.hero-image-container::after {
+    border: 3px solid #00d9ff;
+
+    box-shadow:
+        0 0 12px #00d9ff,
+        0 0 30px rgba(0, 217, 255, 0.6);
+
+    transform: translate(-50%, -50%) scaleY(0.72);
+
+    animation: waveOrbitReverse 9s linear infinite;
+
+    z-index: 4;
+}
+
+
+/* ============================= */
+/* SECOND WAVE                   */
+/* ============================= */
+
+.hero-image-container {
+    --pink: #ff4fd8;
+}
+
+.hero-image-container .hero-image::after {
+    content: "";
+    position: absolute;
+}
+
+
+/* ============================= */
+/* WAVE ANIMATION                */
+/* ============================= */
+
+@keyframes waveOrbit {
+
     from {
         transform:
             translate(-50%, -50%)
             rotate(0deg)
-            translateX(330px);
+            scaleY(0.72);
     }
 
     to {
         transform:
             translate(-50%, -50%)
             rotate(360deg)
-            translateX(330px);
+            scaleY(0.72);
     }
 }
 
 
-/* Different Starting Positions */
+@keyframes waveOrbitReverse {
 
-.object-1 {
-    animation-delay: 0s;
+    from {
+        transform:
+            translate(-50%, -50%)
+            rotate(360deg)
+            scaleY(0.72);
+    }
+
+    to {
+        transform:
+            translate(-50%, -50%)
+            rotate(0deg)
+            scaleY(0.72);
+    }
 }
 
-.object-2 {
-    animation-delay: -2.6s;
-}
-
-.object-3 {
-    animation-delay: -5.3s;
-}
 
 
-.orbit-object {
-    border: 2px solid #ffffff;
-    box-shadow:
-        0 0 10px #9b7cff,
-        0 0 25px #9b7cff,
-        0 0 45px #9b7cff;
-}
+

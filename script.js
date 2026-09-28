@@ -31,3 +31,19 @@ window,addEventListener("scroll", function() {
         }
     });
 });
+
+
+
+
+// STEP 3 — Select & Hide About Section
+
+
+const aboutSection = document.querySelector(".about-section");
+
+aboutSection.style.opacity = "1";
+
+
+window.addEventListener("scroll", function () {
+    console.log("Page is scrolling");
+});
+

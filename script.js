@@ -35,19 +35,17 @@ window,addEventListener("scroll", function() {
 
 
 
-// STEP 3 — Select & Hide About Section
-
+// STEP 3 — Select About Section
 
 const aboutSection = document.querySelector(".about-section");
 
 aboutSection.style.opacity = "1";
 
 
-window.addEventListener("scroll", function () {
+// STEP 4 — Detect Scroll Position
 
-    console.log("Page is scrolling");
+window.addEventListener("scroll", function () {
 
     console.log(window.scrollY);
 
 });
-

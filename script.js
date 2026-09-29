@@ -5,6 +5,7 @@ const mouseDot = document.querySelector(".mouse-dot");
 document.addEventListener("mousemove", function (event) {
 
     mouseDot.style.left = event.clientX + "px";
+
     mouseDot.style.top = event.clientY + "px";
 
 });
@@ -21,6 +22,7 @@ window.addEventListener("scroll", function () {
     sections.forEach(function (section) {
 
         const sectionTop = section.offsetTop;
+
         const sectionHeight = section.clientHeight;
 
         if (window.scrollY >= sectionTop - sectionHeight / 3) {
@@ -34,13 +36,16 @@ window.addEventListener("scroll", function () {
 });
 
 
-// STEP 8: Initial Animation State
+// STEP 9: Deep & Slow Reveal
 
 sections.forEach(function (section) {
 
     section.style.opacity = "0";
-    section.style.transform = "translateY(60px)";
-    section.style.transition = "all 0.8s ease";
+
+    section.style.transform = "translateY(100px)";
+
+    section.style.transition =
+        "opacity 1.6s ease-out, transform 1.6s cubic-bezier(0.16, 1, 0.3, 1)";
 
 });
 
@@ -56,7 +61,25 @@ const observer = new IntersectionObserver(function (entries) {
             console.log("Section is visible");
 
             entry.target.style.opacity = "1";
+
             entry.target.style.transform = "translateY(0)";
+
+
+            // STEP 10 — Staggered Reveal
+
+            const elements = entry.target.querySelectorAll(
+                "h1, h2, h3, p, img, a, button"
+            );
+
+            elements.forEach(function (element, index) {
+
+                element.style.transitionDelay = (index * 0.15) + "s";
+
+                element.style.opacity = "1";
+
+                element.style.transform = "translateY(0)";
+
+            });
 
         }
 
@@ -71,55 +94,4 @@ sections.forEach(function (section) {
 
     observer.observe(section);
 
-    sections.forEach(function (section) {
-
-    section.style.opacity = "0";
-    section.style.transform = "translateY(40px)";
-    section.style.transition =
-        "opacity 1.2s ease-out, transform 1.2s cubic-bezier(0.22, 1, 0.36, 1)";
-
-        // STEP 8 — IntersectionObserver
-
-const observer = new IntersectionObserver(function (entries) {
-
-    entries.forEach(function (entry) {
-
-        if (entry.isIntersecting) {
-
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-
-        }
-
-    });
-
 });
-
-
-// Observe Every Section
-
-sections.forEach(function (section) {
-
-    observer.observe(section);
-
-});
-
-
-        // STEP 9 — Deep & Slow Reveal
-
-sections.forEach(function (section) {
-
-    section.style.opacity = "0";
-
-    // Start much lower
-    section.style.transform = "translateY(100px)";
-
-    // Slow and smooth animation
-    section.style.transition =
-        "opacity 1.6s ease-out, transform 1.6s cubic-bezier(0.16, 1, 0.3, 1)";
-
-         });
-    });
-
-});
-

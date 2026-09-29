@@ -39,8 +39,6 @@ window,addEventListener("scroll", function() {
 
 const aboutSection = document.querySelector(".about-section");
 
-aboutSection.style.opacity = "1";
-
 
 // STEP 4 — Detect Scroll Position
 
@@ -48,4 +46,30 @@ window.addEventListener("scroll", function () {
 
     console.log(window.scrollY);
 
+
+    // STEP 5 — Check Scroll Position
+
+    if (window.scrollY > 300) {
+
+        console.log("About section reached");
+
+
+        // STEP 6 — Show About Section
+
+        aboutSection.style.opacity = "1";
+
+
+        // STEP 7 — Reveal Animation
+
+        aboutSection.style.transform = "translateY(0)";
+
+    }
+
 });
+
+
+// Initial Animation State
+
+aboutSection.style.opacity = "0";
+aboutSection.style.transform = "translateY(60px)";
+aboutSection.style.transition = "all 0.8s ease";aboutSection.style.transform = "translateY(60px)";

@@ -44,6 +44,10 @@ aboutSection.style.opacity = "1";
 
 
 window.addEventListener("scroll", function () {
+
     console.log("Page is scrolling");
+
+    console.log(window.scrollY);
+
 });
 
